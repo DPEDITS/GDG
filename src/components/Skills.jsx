@@ -31,7 +31,6 @@ const Skills = () => {
         <Container>
           <Row>
             <Col>
-              <div className="skill-bx">
                 <h2>Events</h2>
                 <p>
                   The "Developer Summit 2.0" is an annual event featuring
@@ -76,7 +75,7 @@ const Skills = () => {
                     <Button variant="primary">Explore</Button>
                   </div>
                 </Carousel>
-              </div>
+
             </Col>
           </Row>
         </Container>

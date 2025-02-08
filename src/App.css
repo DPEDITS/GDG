@@ -309,6 +309,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius:64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
 }
 .skill-bx {
   background: #00b7ff;
@@ -321,6 +325,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #000;
 	font-size: 45px;
 	font-weight: 700;
+}
+.skill h5 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  color: #000;
+  margin-bottom: 20px;
+  display: block;
 }
 .skill p {
     color: #000000;
@@ -359,7 +372,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 .project p {
-  color: #B8B8B8;
+  color: #000000;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
