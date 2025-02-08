@@ -30,30 +30,61 @@ function Navbarweb() {
     }
 
   return (
-    <Navbar expand="lg" className={scrolled ?"scrolled": ""}>
+    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-            <img src={logo} alt="LOGO"/>
+          <img src={logo} alt="LOGO" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
-            <span className='navbar-toggler-icon'></span>
+          <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" className={activeLink=== 'home'?'active-navbar-link':'navbar-link'} onClick={()=>OnUpdateActiveLink('home')}>Home</Nav.Link>
-            <Nav.Link href="#skills" className={activeLink=== 'skills'?'active-navbar-link':'navbar-link'} onClick={()=>OnUpdateActiveLink('skills')}>Events</Nav.Link>
-            <Nav.Link href="#projects" className={activeLink=== 'projects'?'active-navbar-link':'navbar-link'} onClick={()=>OnUpdateActiveLink('projects')}>Achievments</Nav.Link>
+            <Nav.Link
+              href="#home"
+              className={
+                activeLink === "home" ? "active-navbar-link" : "navbar-link"
+              }
+              onClick={() => OnUpdateActiveLink("home")}
+            >
+              Home
+            </Nav.Link>
+            <Nav.Link
+              href="#skills"
+              className={
+                activeLink === "skills" ? "active-navbar-link" : "navbar-link"
+              }
+              onClick={() => OnUpdateActiveLink("skills")}
+            >
+              Events
+            </Nav.Link>
+            <Nav.Link
+              href="#projects"
+              className={
+                activeLink === "projects" ? "active-navbar-link" : "navbar-link"
+              }
+              onClick={() => OnUpdateActiveLink("projects")}
+            >
+              Past Events
+            </Nav.Link>
           </Nav>
-          <span className='navbar-text'>
-            <div className='social-icon'>
-                <a href='https://www.linkedin.com/in/debashish-parida-421496276'><img src={navIcon1} alt="Linkedin"/></a>
-                <a href='https://www.facebook.com/debashish.parida.395'><img src={navIcon2} alt="FaceBook"/></a>
-                <a href='https://www.instagram.com/dp_edits29/'><img src={navIcon3} alt="Instagram"/></a>
+          <span className="navbar-text">
+            <div className="social-icon">
+              <a href="https://www.linkedin.com/company/gdsc-silicon-institute-of-technology-bhubaneswar/">
+                <img src={navIcon1} alt="Linkedin" />
+              </a>
+              <a href="https://www.facebook.com/gdscsiliconbbsr/">
+                <img src={navIcon2} alt="FaceBook" />
+              </a>
+              <a href="https://www.instagram.com/gdgoc_su/">
+                <img src={navIcon3} alt="Instagram" />
+              </a>
             </div>
-            <button className='vvd' onClick={()=>console.log('connect')}><span>Let's Connect</span></button>
+            <button className="vvd" onClick={() => console.log("connect")}>
+              <span>Let's Connect</span>
+            </button>
           </span>
         </Navbar.Collapse>
-        
       </Container>
     </Navbar>
   );
