@@ -1,30 +1,37 @@
 import React from 'react'
 import { Col, Container, Row,Tab } from 'react-bootstrap'
 import Nav from 'react-bootstrap/Nav';
-import mernstack from '../assets/img/mern-stack.png'
+import mernstack1 from '../assets/img/p5.jpg'
+import mernstack2 from '../assets/img/p2.jpg'
+import mernstack3 from '../assets/img/p3.jpg'
+import mernstack4 from '../assets/img/p4.jpg'
 import ProjectsCard from './ProjectsCard'
 import colorSharp2 from '../assets/img/color-sharp2.png'
 const Projects = () => {
   const projects = [
     {
       title: "Frontend Developer",
-      description: "MERN STACK",
-      imgUrl: mernstack,
+      imgUrl: mernstack1,
     },
-  ]
+    {
+      title: "Frontend Developer",
+      imgUrl: mernstack2,
+    },
+    {
+      title: "Frontend Developer",
+      imgUrl: mernstack3,
+    },
+  ];
   return (
     <section className='project' id='projects'>
       <Container>
         <Row>
           <Col>
-            <h2>Achievments</h2>
-            <p>I proudly showcase my MERN stack certification, demonstrating 
-              my comprehensive knowledge in MongoDB, Express.js, React, and Node.js, 
-              and my commitment to mastering full-stack web development.</p>
+            <h2>Past Events</h2>
             <Tab.Container id='projects-tab' defaultActiveKey="first">
             <Nav variant="pills" className='nav-pills mb-5 justify-content-center align-items-center' id='pills-tab'>
               <Nav.Item>
-                <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                <Nav.Link eventKey="first">Event-1</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="second">Tab 2</Nav.Link>
